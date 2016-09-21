@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">I Stock</string>
+    <string name="content_authority">com.electronics.mb.istock.authorities</string>
+</resources>
