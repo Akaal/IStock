@@ -9,18 +9,25 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".activities.DashboardActivity">
+
+        </activity>
+        <activity android:name=".activities.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.SplashActivity"></activity>
 
         <provider
             android:name=".database.IStockProvider"
             android:authorities="@string/content_authority"
             android:exported="false" />
+
+        <activity android:name=".activities.SearchProductsActivity" />
+        <activity android:name=".activities.AddProductsActivity" />
+        <activity android:name=".activities.EditProductsActivity" />
+        <activity android:name=".activities.MiscActivity"></activity>
     </application>
 
 </manifest>

@@ -1,6 +1,8 @@
 package com.mb.electronics.istock.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 
 import com.mb.electronics.istock.R;
@@ -11,5 +13,17 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        Handler handle = new Handler();
+        handle.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+
+                Intent intent = new Intent(SplashActivity.this, DashboardActivity.class);
+                intent.putExtra("from_main", true);
+                startActivity(intent);
+                SplashActivity.this.finish();
+
+            }
+        }, 4000);
     }
 }

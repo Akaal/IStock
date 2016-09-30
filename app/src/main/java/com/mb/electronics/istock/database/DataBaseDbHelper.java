@@ -17,8 +17,8 @@ public class DataBaseDbHelper extends SQLiteOpenHelper {
             ProductEntry.COLUMN_STORE_ID + " TEXT , " +
             ProductEntry.COLUMN_PRODUCT_NAME + " TEXT UNIQUE NOT NULL, " +
             ProductEntry.COLUMN_QUANTITY + " REAL , " +
-            ProductEntry.COLUMN_MRP + " TEXT NOT NULL, " +
-            ProductEntry.COLUMN_OUR_SELLING_PRICE + " TEXT NOT NULL, " +
+            ProductEntry.COLUMN_MRP + " TEXT , " +
+            ProductEntry.COLUMN_OUR_SELLING_PRICE + " TEXT , " +
             ProductEntry.COLUMN_SKU_ID + " TEXT NOT NULL," +
             ProductEntry.COLUMN_ADDED_ON + " TEXT NOT NULL " +
             " );";
