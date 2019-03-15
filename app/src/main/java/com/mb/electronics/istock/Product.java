@@ -1,14 +1,26 @@
 package com.mb.electronics.istock;
 
+import java.io.Serializable;
+
 /**
  * Created by baljinder1.singh on 30-09-2016.
  */
-public class Product {
+public class Product implements Serializable {
 
     public String ARTICLE_NUMBER;
     public String ARTICLE_NAME;
     public String Selling_Price;
     private String quantity;
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    private String description;
 
     public String getARTICLE_NUMBER() {
         return ARTICLE_NUMBER;

@@ -6,4 +6,29 @@
     android:background="@drawable/bg"
     tools:context="com.mb.electronics.istock.activities.SplashActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/app_icon" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingRight="25dp"
+            android:text="I Stock"
+            android:textColor="@color/green"
+            android:textSize="40sp"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
 </RelativeLayout>

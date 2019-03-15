@@ -18,13 +18,10 @@ public class DataContract {
     public static final Uri BASE_CONTENT_URI = Uri.parse("content://" + CONTENT_AUTHORITY);
 
     // Possible paths (appended to base content URI for possible URI's)
-    // For instance, content://com.example.android.sunshine.app/weather/ is a valid path for
-    // looking at weather data. content://com.example.android.sunshine.app/givemeroot/ will fail,
-    // as the ContentProvider hasn't been given any information on what to do with "givemeroot".
-    // At least, let's hope not.  Don't be that dev, reader.  Don't be that dev.
+
     public static final String PATH_PRODUCT = "product";
 
-    /* Inner class that defines the table contents of the weather table */
+    /* Inner class that defines the table contents of the product table */
     public static final class ProductEntry implements BaseColumns {
 
         public static final Uri CONTENT_URI =
@@ -48,6 +45,7 @@ public class DataContract {
         public static final String COLUMN_PRODUCT_ID = "product_id";
         public static final String COLUMN_STORE_ID = "store_id";
         public static final String COLUMN_SKU_ID = "sku_id";
+        public static final String COLUMN_PRODUCT_DESCRIPTION = "product_description";
 
         public static Uri buildCartUri(long id) {
             return ContentUris.withAppendedId(CONTENT_URI, id);

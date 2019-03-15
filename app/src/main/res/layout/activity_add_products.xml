@@ -9,98 +9,125 @@
 
     <include layout="@layout/header_toolbar" />
 
-
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:weightSum="1">
-
+       >
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.2"
-            android:orientation="horizontal"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:paddingTop="16dp">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
 
-            <EditText
-                android:id="@+id/et_product_number"
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Product Number" />
+                android:layout_height="0dp"
+                android:layout_weight="0.16"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginTop="16dp">
 
-        </LinearLayout>
+                <EditText
+                    android:id="@+id/et_product_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Product Number"
+                    android:inputType="text"
+                    android:imeOptions="actionNext" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.2"
-            android:orientation="horizontal"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp">
+            </LinearLayout>
 
-            <EditText
-                android:id="@+id/et_product_name"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Product Name" />
-        </LinearLayout>
+                android:layout_height="0dp"
+                android:layout_weight="0.16"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.2"
-            android:orientation="horizontal"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp">
+                <EditText
+                    android:id="@+id/et_product_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Product Name"
+                    android:imeOptions="actionNext" />
+            </LinearLayout>
 
-            <EditText
-                android:id="@+id/et_product_qty"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Product Quantity"
-                android:inputType="number" />
+                android:layout_height="0dp"
+                android:layout_weight="0.16"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
 
-        </LinearLayout>
+                <EditText
+                    android:id="@+id/et_product_qty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Product Quantity"
+                    android:imeOptions="actionNext"
+                    android:inputType="number" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.2"
-            android:orientation="horizontal"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp">
+            </LinearLayout>
 
-            <EditText
-                android:id="@+id/et_product_price"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Product Price"
-                android:inputType="number" />
+                android:layout_height="0dp"
+                android:layout_weight="0.16"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
 
-        </LinearLayout>
+                <EditText
+                    android:id="@+id/et_product_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Product Price"
+                    android:imeOptions="actionNext"
+                    android:inputType="number" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.2"
-            android:orientation="horizontal"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp">
-
-            <Button
-                android:id="@+id/btn_submit"
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/round_edges_button"
-                android:hint="Add Product"
-                android:textColor="@color/white"
-                android:textSize="16sp" />
+                android:layout_height="0dp"
+                android:layout_weight="0.16"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
 
+                <EditText
+                    android:id="@+id/et_product_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Product Description"
+                    android:imeOptions="actionDone"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_edges_button"
+                    android:hint="Add Product"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
-
+    </ScrollView>
 </LinearLayout>
